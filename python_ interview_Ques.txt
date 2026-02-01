@@ -1,0 +1,27 @@
+version
+why python is so popular
+application of python
+Interpreted language
+Dynamic types
+portability language or embedded 
+variable identifier
+Data types (int, flot com, string, list, tuple, bool)
+keyword - reserved word
+type castuing ( explit implicit)
+operator( type arithmatic, comparisdion/relational, logical, bitwise, membership, identifier)
+conditional statenment( if, else, elif)
+loop ( foor, while )
+control statenment - break, pass, continue
+range function
+string
+list/ List comprension
+tuple
+dictionary
+set/frozenset
+function - type -- built in , user defined, type of arguments, recursion, swap, lambda function
+Moduls/ pakeges - math, random, date, time, calendar.
+exception handling - try, except, finally, else
+file handling - open, with,read, write, close
+regular expression - match, search, findall, split, sub
+oop - class, object, (inheritance)-- single,nultiple, multilevel, hybrid, herarchicle,, (polymorphism),(encapsulation- private, protected, public),(iterator- iter,next),(Generator), (Decorator)
+
