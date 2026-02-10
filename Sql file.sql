@@ -57,8 +57,20 @@ select avg (`Hours studied`) as Avg_Hr_stdy,
  set city = "Bhopal"
  where First_name = "Rohan";
  
- select * from vidhyarthi;
+ -- new database
+
+ use new_world;
+ select * from city;
+
+
+ select * from city
+ WHERE `CountryCode` = "aus" or `District` = "madhyapradesh"
+
  
 
- use world;
- select * from city;
+
+
+
+
+
+ 
