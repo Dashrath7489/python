@@ -79,6 +79,9 @@ from city
 GROUP BY `CountryCode`
 ORDER BY `CountryCode` asc;
 
-
+SELECT district, sum(population) as total_pap
+FROM city
+GROUP BY District
+ORDER BY total_pap DESC
 
  
