@@ -64,12 +64,20 @@ select avg (`Hours studied`) as Avg_Hr_stdy,
 
 
  select * from city
- WHERE `CountryCode` = "aus" or `District` = "madhyapradesh"
-
- 
+ WHERE `CountryCode` = "aus" or `District` = "madhyapradesh";
 
 
 
+SELECT `CountryCode`, min(population) as min_population
+from city
+GROUP BY `CountryCode`
+ORDER BY `CountryCode` asc;
+
+
+SELECT `CountryCode`, MAX(population) as MAX_population
+from city
+GROUP BY `CountryCode`
+ORDER BY `CountryCode` asc;
 
 
 
