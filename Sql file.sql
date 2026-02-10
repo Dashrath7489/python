@@ -85,3 +85,32 @@ GROUP BY District
 ORDER BY total_pap DESC
 
  
+ SELECT district, sum(population) as total_pap
+FROM city
+GROUP BY District
+ORDER BY total_pap DESC
+LIMIT 4;
+
+ SELECT district, sum(population) as total_pap
+FROM city
+GROUP BY District
+ORDER BY total_pap DESC
+LIMIT 4 OFFSET 1;
+
+ SELECT district, sum(population) as total_pap
+FROM city
+GROUP BY District
+ORDER BY total_pap DESC
+LIMIT 1 OFFSET 1;
+
+ SELECT district, sum(population) as total_pap
+FROM city
+GROUP BY District
+ORDER BY total_pap ASC
+LIMIT 1 OFFSET 1;
+
+ SELECT CountryCode, AVG(population) as AVG_population
+FROM city
+GROUP BY CountryCode
+ORDER BY AVG_population from city;
+
