@@ -21,3 +21,13 @@ select
  from employee
  join address
  on employee.emp_id = employ_id
+
+ select employee.empname, employee.technology, projects.project_name,projects.emp_id
+ from employee
+ join projects
+ on employee.emp_id = idprojects
+
+ select e.empname, e.technology, p.project_name,p.emp_id
+ from employee as e
+ inner join projects as p
+ on e.emp_id = idprojects
