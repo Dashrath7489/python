@@ -26,3 +26,21 @@ where governmentform = "republic"
 
 select * from countrylanguage
 where percentage > 50
+
+-- Find the total population of each country by grouping records by CountryCode in the City table.
+
+select countrycode,sum(population) as Total_population
+FROM city 
+group by countryCode;
+
+-- Get the average life expectancy for each continent by grouping by Continent in the Country table.
+SELECT continent, avg(LifeExpectancy)
+FROM country
+GROUP BY continent
+
+--Find the number of official languages spoken in each country by grouping records in the CountryLanguage table.
+
+SELECT countrycode , COUNT(isofficial)
+from countrylanguage
+where isofficial = "T"
+GROUP BY CountryCode;
